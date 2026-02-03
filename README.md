@@ -5,7 +5,7 @@ A modern **restaurant management system** redesigned as a **desktop-style dashbo
 This project replaces a traditional website layout with a **professional admin/user dashboard experience**.
 
 ---
-
+## Student Server link: ``` https://student.heraldcollege.edu.np/~np03cs4a240243/public/index.php```
 ## 🎯 Core Changes
 
 **Before**
