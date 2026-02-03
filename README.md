@@ -1,61 +1,130 @@
-🍽️ Restaurant Deluxe - Dashboard UI
+# 🍽️ Restaurant Deluxe – Dashboard UI
 
-A modern restaurant management system redesigned as a dashboard-style app with sidebar navigation and card-based layout.
+A modern **restaurant management system** redesigned as a **desktop-style dashboard application** with sidebar navigation and a card-based layout.
 
-🎯 Core Changes
+This project replaces a traditional website layout with a **professional admin/user dashboard experience**.
 
-Before: Website layout with top navigation
-Now: Desktop-style dashboard with left sidebar + topbar
+---
 
-🎨 Key UI Features
+## 🎯 Core Changes
 
-Sidebar Navigation
+**Before**
+- Website-style layout
+- Top navigation bar
 
-Dark theme with user profile
-Sectioned menu (Main, Management, Account)
-Active state indicators
-Cart badge counters
-Dashboard Layout
+**Now**
+- Desktop-style dashboard
+- Left sidebar navigation
+- Topbar with quick actions
+- Card-based content layout
 
-Topbar with page title & quick actions
-Card-based content grid
-Menu cards with image areas
-Professional color scheme
-Responsive Design
+---
 
-Desktop: Fixed sidebar
-Mobile: Hamburger menu
-Cards stack on smaller screens
-📁 Project Structure
+## 🎨 Key UI Features
 
-text
+### 📌 Sidebar Navigation
+- Dark theme with user profile
+- Sectioned menu:
+  - **Main**
+  - **Management**
+  - **Account**
+- Active menu indicators
+- Cart badge counters
+
+### 📊 Dashboard Layout
+- Topbar with page title & quick actions
+- Card-based content grid
+- Menu cards with image placeholders
+- Clean and professional color scheme
+
+### 📱 Responsive Design
+- **Desktop (>768px)**: Fixed sidebar
+- **Mobile (<768px)**:
+  - Sidebar hidden
+  - Accessible via hamburger menu
+  - Cards stack vertically
+
+---
+
+## 📁 Project Structure
+
+```
 restaurant_project/
-├── includes/          # Sidebar, footer, functions
-├── public/           # Main pages + assets
-└── database/         # Schema & config
-🚀 Quick Setup
+├── includes/        # Sidebar, footer, reusable functions
+├── public/          # Main pages, CSS, JS, assets
+└── database/        # Database schema & configuration
+```
 
-Import database/schema.sql
-Configure config/db.php
-Access via http://localhost/restaurant_project/public/
-🎨 Colors
+---
 
-Primary: Pink (#ff6b9d)
-Sidebar: Dark Navy (#1a1a2e)
-Background: Light Gray (#f8f9fa)
-Cards: White (#ffffff)
-📱 Responsive
+## 🚀 Quick Setup
 
-Desktop (>768px): Sidebar visible
-Mobile: Sidebar hidden, accessible via hamburger menu
-🔒 Security Features
+1. Import the database:
+   ```sql
+   database/schema.sql
+   ```
 
-Bcrypt password hashing
-Prepared statements
-Session management
-XSS protection
-💡 Usage
+2. Configure database connection:
+   ```php
+   config/db.php
+   ```
 
-Users: Browse menu, add to cart, view orders
-Admins: Manage items & orders via sidebar Management section
-New Look: Professional dashboard instead of traditional website layout.
+3. Run the project:
+   ```
+   http://localhost/restaurant_project/public/
+   ```
+
+---
+
+## 🔐 Default Admin Login Credentials
+
+```
+Username: admin
+Password: admin123
+```
+
+⚠️ **Change the admin password after first login for security reasons.**
+
+---
+
+## 🎨 Color Palette
+
+| Element     | Color |
+|------------|-------|
+| Primary    | #ff6b9d |
+| Sidebar    | #1a1a2e |
+| Background | #f8f9fa |
+| Cards      | #ffffff |
+
+---
+
+## 🔒 Security Features
+
+- Bcrypt password hashing
+- Prepared statements (PDO)
+- Secure session handling
+- Basic XSS protection
+
+---
+
+## 💡 Usage
+
+### Users
+- Browse menu items
+- Add items to cart
+- View orders
+
+### Admins
+- Manage menu items
+- Manage orders
+- Access management tools via sidebar
+
+---
+
+## ✨ New Look
+
+A clean, professional dashboard UI that feels like a desktop application rather than a traditional website.
+
+---
+
+**Built with ❤️ using PHP, MySQL, HTML, CSS, and JavaScript**
